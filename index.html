@@ -5,162 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Missão Brasil</title>
 
-<!-- FAVICON -->
 <link rel="icon" href="https://raw.githubusercontent.com/sebastiaormorais-art/projeto1/main/logo.png" type="image/png">
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-}
-
-/* NAVBAR */
-.navbar {
-    background: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-}
-
-.navbar img {
-    width: 120px;
-}
-
-.nav-links a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: #f2b705;
-}
-
-/* HERO */
-.hero {
-    background: linear-gradient(to right, black, #222);
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 45px;
-}
-
-.btn {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #f2b705;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.btn:hover {
-    background: #d9a404;
-}
-
-/* FAIXA */
-.faixa {
-    height: 6px;
-    background: #f2b705;
-}
-
-/* SEÇÕES */
-.section {
-    max-width: 1000px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-h2 {
-    border-left: 6px solid #f2b705;
-    padding-left: 10px;
-}
-
-/* IMAGEM */
-.imagem {
-    float: right;
-    width: 280px;
-    margin: -15px 0 10px 20px;
-    border-radius: 10px;
-}
-
-/* CARDS */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #111;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* VÍDEO */
-.video-box video {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* CONTATO */
-.contato input,
-.contato textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.contato button {
-    margin-top: 15px;
-    padding: 10px;
-    background: #f2b705;
-    border: none;
-    font-weight: bold;
-}
-
-/* RODAPÉ */
-.footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    .imagem {
-        float: none;
-        display: block;
-        margin: 20px auto;
-    }
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        margin-top: 10px;
-    }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -252,7 +98,7 @@ h2 {
     <input type="email" placeholder="Seu email">
     <textarea placeholder="Mensagem"></textarea>
 
-    <button>Enviar</button>
+    <button onclick="enviarMensagem()">Enviar</button>
 </div>
 
 <!-- RODAPÉ -->
@@ -260,5 +106,6 @@ h2 {
 © 2026 - Partido Missão | Todos os direitos reservados
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
